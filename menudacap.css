@@ -1,0 +1,97 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:red;
+}
+a{
+    color: black;
+    text-decoration-line: none;
+}
+
+.box{
+    background-color:pink;
+    padding: 20px;
+    border-radius: 4px;
+}
+.title{
+    color:black;
+    margin-top: 0;
+}
+.btn{
+    padding: 10px;
+    background-color: antiquewhite;
+    color: white;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: backgroud 0.3s;
+}
+.btn:hover{
+    background-color: green;
+}
+#header{
+    background-color: blue;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+#menu{
+    background-color: #34495e;
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+#menu ul li{
+    position: relative; /*Định vị lại vị trí menu con*/
+}
+#menu ul li a{
+    display: block;
+    padding: 15px;
+}
+#menu ul li:hover{
+    background-color: green
+}
+#menu ul li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    flex-direction: column; /*gộp các menu thành một cột*/
+    z-index: 100;
+}
+#menu ul li:hover ul{
+    display: flex;
+}
+#menu ul li ul li ul{
+    top: 0;
+    left: 100%;
+}
+#main{
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    gap: 20px;
+}
+#content{
+    flex: 3;
+}
+#sidebar{
+    flex:1;
+}
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+#footer p{
+    margin: 0;
+}

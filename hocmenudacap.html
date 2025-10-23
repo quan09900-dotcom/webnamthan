@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học menu đa cấp với class và id</title>
+    <link rel="stylesheet" href="dacap.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <h1>Học class và ID</h1>
+        <p>Học menu đa cấp</p>
+    </div>
+    <!-- menu -->
+    <div id="menu">
+        <ul>
+            <li><a herf="#">Trang chủ</a></li>
+            <li>
+                <a herf="">Sản phẩm</a>
+                <ul>
+                    <li><a herf="">Điện thoại</a></li>
+
+                    <!-- Laptop có menu con -->
+                    <li>
+                        <a href="#">Laptop</a>
+                        <ul>
+                            <li><a href="">Dell</a></li>
+                            <li><a href="">HP</a></li>
+                            <li><a href="">ASUS</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="">Phụ kiện</a></li>
+                </ul>
+            </li>
+            <li><a href="">Dịch vụ</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Liên hệ</a></li>
+        </ul>
+    </div>
+    <!-- Nội dung -->
+    <div id="main">
+        <div id="content" class="box">
+            <h2 class="title">Nội dung trang web</h2>
+            <p>Đây là phần nội dung chính của trâng web
+                Nó sử dụng <b> id="content"</b> để định vị bố cục <b>class="box"</b> để định dạng khung trắng
+            </p>
+            <!--Hình ảnh têm vào đây-->
+                <img src="D:\baitapthuchanh\.vscode\z7004849145772_63b33bc218f0d5d5dc2496ff7e45d7ea.jpg" alt="Hình minh họa" class="noidung-img">
+
+            <p>
+                Thanh menu phía trên <b>menu đa cấp</b>
+                khi trỏ chuột vào sẽ tự động hiện menu con ra
+            </p>
+            <a href="" class="btn">Xem thêm</a>
+        </div>
+        <div id="content">
+            <div class="box">
+                <h2>Nội dung trang wep</h2>
+                <p>Đây chính là phần nội dung chính của trang web</p>
+
+                <!--Hình ảnh têm vào đây-->
+                <img src="d:\ảnh đẹp\z7047986532348_b03c1abba2258bde15317037107b2886.jpg" alt="Hình minh họa" class="noidung-img">
+
+        </div>
+        <div id="sidebar" class="box">
+            <h3>Sidebar</h3>
+            <p>
+                Đây là phần sidebar. Cũng dùng class <b>.box</b>
+                Để có cùng phong cách với nội dung chính
+            </p>
+            <a href="">Liên hệ</a>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <p>© 2025 - Nguyễn Quân</p>
+    </div>
+</body>
+
+</html>
